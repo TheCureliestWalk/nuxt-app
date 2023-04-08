@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="modulepreload" href="/posts/_payload.js" />
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/entry.5fb35958.js" />
+    <link rel="preload" as="style" href="/_nuxt/entry.979a5045.css" />
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/default.73892043.js" />
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/nuxt-link.5a681159.js" />
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/index.455f4b9b.js" />
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/fetch.cb7ea18b.js" />
+    <link rel="modulepreload" as="script" crossorigin href="/_nuxt/index.9b013864.js" />
+    <link rel="prefetch" as="script" crossorigin href="/_nuxt/auth.996c3287.js" />
+    <link rel="prefetch" as="script" crossorigin href="/_nuxt/error-component.153a48ef.js" />
+    <link rel="stylesheet" href="/_nuxt/entry.979a5045.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;500;700&display=swap');
+      html {
+        font-family: Noto Sans Thai, sans-serif;
+      }
+      .page-enter-active,
+      .page-leave-active {
+        transition: all 0.4s;
+      }
+      .page-enter-from,
+      .page-leave-to {
+        filter: blur(0.1rem);
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="__nuxt">
+      <!--[-->
+      <div class="flex flex-col gap-6 py-8 px-8 md:px-16 lg:px-32 w-full min-h-screen bg-gradient-to-tr from-pink-300 to-sky-300 shadow-md">
+        <div>
+          <nav class="w-full bg-white p-3.5 rounded-xl text-gray-700 flex">
+            <div class="pl-4 grow"><a href="/" class="font-bold tracking-wide">Iho&#39;s App</a></div>
+            <div class="pr-4">
+              <ul class="flex gap-4">
+                <!--[-->
+                <li><a href="/" class="text-gray-800 hover:underline underline-offset-4 decoration-2 decoration-slate-700 duration-150 delay-75">Home</a></li>
+                <li><a aria-current="page" href="/posts" class="router-link-active router-link-exact-active text-gray-800 hover:underline underline-offset-4 decoration-2 decoration-slate-700 duration-150 delay-75">Posts</a></li>
+                <li><a href="/about" class="text-gray-800 hover:underline underline-offset-4 decoration-2 decoration-slate-700 duration-150 delay-75">About</a></li>
+                <li><a href="/login" class="text-gray-800 hover:underline underline-offset-4 decoration-2 decoration-slate-700 duration-150 delay-75">Login</a></li>
+                <li><a href="/signup" class="text-gray-800 hover:underline underline-offset-4 decoration-2 decoration-slate-700 duration-150 delay-75">Signup</a></li>
+                <li><a href="/settings" class="text-gray-800 hover:underline underline-offset-4 decoration-2 decoration-slate-700 duration-150 delay-75">Settings</a></li>
+                <!--]-->
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="p-8 bg-white w-full min-h-screen rounded-xl shadow-md">
+          <div class="flex items-center justify-between rounded-xl my-4 p-2 px-4 shadow-md w-full bg-amber-500 text-white">
+            <h1 class="text-md font-bold">No context</h1>
+            <button class="rounded-full p-2.5 -m-1.5 hover:bg-white/30">X</button>
+          </div>
+          <!--[-->
+          <div>
+            <h1 class="text-lg font-bold tracking-wide">All posts</h1>
+            <div class="my-4"><a href="posts/new" class="rounded p-2 bg-sky-500 hover:bg-sky-700 text-white text-sm tracking-wide">✏️ New Post</a></div>
+            <p class="text-xs">Posts: 30</p>
+            <p class="text-xs">Posts: [ [ &quot;american&quot;, 11 ], [ &quot;french&quot;, 10 ], [ &quot;history&quot;, 9 ], [ &quot;crime&quot;, 9 ], [ &quot;love&quot;, 9 ], [ &quot;english&quot;, 8 ], [ &quot;mystery&quot;, 8 ], [ &quot;magical&quot;, 7 ], [ &quot;fiction&quot;, 6 ], [ &quot;classic&quot;, 5 ] ]</p>
+            <div class="grid grid-cols-4 gap-4 mt-8 overflow-hidden text-gray-700">
+              <!--[-->
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/1" class="font-bold text-base cursor-pointer hover:text-emerald-500">His mother had always taught him</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 2</div>
+                </div>
+                <div class=""><a href="/posts/1" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/2" class="font-bold text-base cursor-pointer hover:text-emerald-500">He was an expert but not in a discipline</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">fiction</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 2</div>
+                </div>
+                <div class=""><a href="/posts/2" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/3" class="font-bold text-base cursor-pointer hover:text-emerald-500">Dave watched as the forest burned up on the hill.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 5</div>
+                </div>
+                <div class=""><a href="/posts/3" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/4" class="font-bold text-base cursor-pointer hover:text-emerald-500">All he wanted was a candy bar.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 1</div>
+                </div>
+                <div class=""><a href="/posts/4" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/5" class="font-bold text-base cursor-pointer hover:text-emerald-500">Hopes and dreams were dashed that day.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 2</div>
+                </div>
+                <div class=""><a href="/posts/5" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/6" class="font-bold text-base cursor-pointer hover:text-emerald-500">Dave wasn&#39;t exactly sure how he had ended up</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">classic</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 3</div>
+                </div>
+                <div class=""><a href="/posts/6" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/7" class="font-bold text-base cursor-pointer hover:text-emerald-500">This is important to remember.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 0</div>
+                </div>
+                <div class=""><a href="/posts/7" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/8" class="font-bold text-base cursor-pointer hover:text-emerald-500">One can cook on and with an open fire.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 9</div>
+                </div>
+                <div class=""><a href="/posts/8" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/9" class="font-bold text-base cursor-pointer hover:text-emerald-500">There are different types of secrets.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 2</div>
+                </div>
+                <div class=""><a href="/posts/9" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/10" class="font-bold text-base cursor-pointer hover:text-emerald-500">They rushed out the door.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">fiction</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 4</div>
+                </div>
+                <div class=""><a href="/posts/10" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/11" class="font-bold text-base cursor-pointer hover:text-emerald-500">It wasn&#39;t quite yet time to panic.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 5</div>
+                </div>
+                <div class=""><a href="/posts/11" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/12" class="font-bold text-base cursor-pointer hover:text-emerald-500">She was aware that things could go wrong.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 7</div>
+                </div>
+                <div class=""><a href="/posts/12" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/13" class="font-bold text-base cursor-pointer hover:text-emerald-500">She wanted rainbow hair.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">classic</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 0</div>
+                </div>
+                <div class=""><a href="/posts/13" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/14" class="font-bold text-base cursor-pointer hover:text-emerald-500">The paper was blank.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 0</div>
+                </div>
+                <div class=""><a href="/posts/14" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/15" class="font-bold text-base cursor-pointer hover:text-emerald-500">The trees, therefore, must be such old</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">fiction</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 1</div>
+                </div>
+                <div class=""><a href="/posts/15" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/16" class="font-bold text-base cursor-pointer hover:text-emerald-500">There was only one way to do things in the Statton house.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 5</div>
+                </div>
+                <div class=""><a href="/posts/16" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/17" class="font-bold text-base cursor-pointer hover:text-emerald-500">She was in a hurry.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 0</div>
+                </div>
+                <div class=""><a href="/posts/17" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/18" class="font-bold text-base cursor-pointer hover:text-emerald-500">She had a terrible habit o comparing her life to others</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 3</div>
+                </div>
+                <div class=""><a href="/posts/18" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/19" class="font-bold text-base cursor-pointer hover:text-emerald-500">The rain and wind abruptly stopped.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">fiction</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">magical</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 8</div>
+                </div>
+                <div class=""><a href="/posts/19" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/20" class="font-bold text-base cursor-pointer hover:text-emerald-500">He couldn&#39;t remember exactly where he had read it</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">classic</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 9</div>
+                </div>
+                <div class=""><a href="/posts/20" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/21" class="font-bold text-base cursor-pointer hover:text-emerald-500">He wandered down the stairs and into the basement</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 8</div>
+                </div>
+                <div class=""><a href="/posts/21" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/22" class="font-bold text-base cursor-pointer hover:text-emerald-500">She has seen this scene before.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">classic</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 6</div>
+                </div>
+                <div class=""><a href="/posts/22" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/23" class="font-bold text-base cursor-pointer hover:text-emerald-500">It&#39;s an unfortunate reality that we don&#39;t teach people how to make money</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">english</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 4</div>
+                </div>
+                <div class=""><a href="/posts/23" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/24" class="font-bold text-base cursor-pointer hover:text-emerald-500">The robot clicked disapprovingly.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 2</div>
+                </div>
+                <div class=""><a href="/posts/24" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/25" class="font-bold text-base cursor-pointer hover:text-emerald-500">It went through such rapid contortions</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">fiction</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">history</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 3</div>
+                </div>
+                <div class=""><a href="/posts/25" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/26" class="font-bold text-base cursor-pointer hover:text-emerald-500">She patiently waited for his number to be called.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">french</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 7</div>
+                </div>
+                <div class=""><a href="/posts/26" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/27" class="font-bold text-base cursor-pointer hover:text-emerald-500">Ten more steps.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">classic</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 4</div>
+                </div>
+                <div class=""><a href="/posts/27" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/28" class="font-bold text-base cursor-pointer hover:text-emerald-500">He had three simple rules by which he lived.</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">crime</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 2</div>
+                </div>
+                <div class=""><a href="/posts/28" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/29" class="font-bold text-base cursor-pointer hover:text-emerald-500">The chair sat in the corner where it had been</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">mystery</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 6</div>
+                </div>
+                <div class=""><a href="/posts/29" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <div class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
+                <div><a href="/posts/30" class="font-bold text-base cursor-pointer hover:text-emerald-500">Things aren&#39;t going well at all</a></div>
+                <div class="my-4 flex justify-between space-x-3 text-sm border-t-2 pt-2 px-2">
+                  <div class="border-l-2 pl-2 border-indigo-500">
+                    <!--[-->
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">american</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">love</span>
+                    <span class="inline-flex pr-2 cursor-pointer hover:text-sky-500 decoration-slate-500">fiction</span>
+                    <!--]-->
+                  </div>
+                  <div class="hover:text-indigo-500 cursor-pointer">Like: 0</div>
+                </div>
+                <div class=""><a href="/posts/30" class="flex flex-row-reverse text-sm underline underline-offset-4 decoration-emerald-500 hover:text-indigo-500">+ Read</a></div>
+              </div>
+              <!--]-->
+            </div>
+          </div>
+          <!--]-->
+        </div>
+      </div>
+      <!--]-->
+    </div>
+    <script type="module">
+      import p from '/posts/_payload.js'
+      window.__NUXT__ = {
+        ...p,
+        ...(function (a, b, c) {
+          return {
+            state: { $ssupabase_user: null },
+            _errors: {},
+            serverRendered: true,
+            config: {
+              public: {
+                content: {
+                  locales: [],
+                  defaultLocale: b,
+                  integrity: 1680896420298,
+                  experimental: { stripQueryParameters: a, clientDB: a },
+                  api: { baseURL: '\u002Fapi\u002F_content' },
+                  navigation: { fields: [] },
+                  tags: { p: 'prose-p', a: 'prose-a', blockquote: 'prose-blockquote', 'code-inline': 'prose-code-inline', code: 'prose-code', em: 'prose-em', h1: 'prose-h1', h2: 'prose-h2', h3: 'prose-h3', h4: 'prose-h4', h5: 'prose-h5', h6: 'prose-h6', hr: 'prose-hr', img: 'prose-img', ul: 'prose-ul', ol: 'prose-ol', li: 'prose-li', strong: 'prose-strong', table: 'prose-table', thead: 'prose-thead', tbody: 'prose-tbody', td: 'prose-td', th: 'prose-th', tr: 'prose-tr' },
+                  highlight: a,
+                  wsUrl: b,
+                  documentDriven: a,
+                  host: b,
+                  trailingSlash: a,
+                  anchorLinks: { depth: 4, exclude: [1] }
+                },
+                supabase: { url: 'https:\u002F\u002Fkusmrgjslybxufeqpplz.supabase.co', key: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt1c21yZ2pzbHlieHVmZXFwcGx6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODAyNzk4OTgsImV4cCI6MTk5NTg1NTg5OH0.HjfaYWMNbDudwtrllhmuTj6q8zdm2bMKeR6hjkgk8Hc', client: {}, redirect: a, cookies: { name: 'sb', lifetime: 28800, domain: b, path: c, sameSite: 'lax' } }
+              },
+              app: { baseURL: c, buildAssetsDir: '\u002F_nuxt\u002F', cdnURL: b }
+            },
+            pinia: {},
+            prerenderedAt: 1680896442756
+          }
+        })(false, '', '\u002F')
+      }
+    </script>
+    <script type="module" src="/_nuxt/entry.5fb35958.js" crossorigin></script>
+  </body>
+</html>

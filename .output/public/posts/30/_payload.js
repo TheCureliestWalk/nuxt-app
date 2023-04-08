@@ -1,0 +1,1 @@
+export default { data: { AJ6hWLUlJC: { id: 30, title: "Things aren't going well at all", body: "Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon.", userId: 2, tags: ['american', 'love', 'fiction'], reactions: 0 } }, prerenderedAt: 1680896452443 }
