@@ -6,3 +6,10 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+
+useHead({
+  title: "Iho's App"
+})
+</script>

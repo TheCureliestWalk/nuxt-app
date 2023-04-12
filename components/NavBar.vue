@@ -2,7 +2,9 @@
   <div>
     <nav class="w-full bg-white p-3.5 rounded-xl text-gray-700 flex">
       <div class="pl-4 grow">
-        <a href="/" class="font-bold tracking-wide">Iho's App</a>
+        <a href="/" class="font-bold">
+          <img src="logo.svg" width="100" alt="p-matter">
+        </a>
       </div>
       <div class="pr-4">
         <ul class="flex gap-4">

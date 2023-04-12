@@ -10,7 +10,7 @@
       <p class="text-xs">Posts: {{ data.posts?.length }}</p>
       <p class="text-xs">Posts: {{ tagCounts }}</p>
       <p v-if="pending">Loading...</p>
-      <div v-else class="grid grid-cols-4 gap-4 mt-8 overflow-hidden text-gray-700">
+      <div v-else class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-8 overflow-hidden text-gray-700">
         <div v-for="x in data.posts" :key="x.id" class="flex flex-col w-full max-w-md bg-slate-50 p-6 border-l-2 border-cyan-300">
           <div>
             <NuxtLink :href="'posts/' + x.id" class="font-bold text-base cursor-pointer hover:text-emerald-500">{{ x.title }}</NuxtLink>
