@@ -9,7 +9,7 @@ const file = ref()
 
 const updateImg = async () => {
   const uploadedFile = file.value.files[0]
-  const {data, error} = await supabase.storage.from('user-profile').upload(uploadedFile.name, uploadedFile)
+  const { data, error } = await supabase.storage.from('user-profile').upload(uploadedFile.name, uploadedFile)
   console.log(uploadedFile)
   if (data) {
     router.push('/')

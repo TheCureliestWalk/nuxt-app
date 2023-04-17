@@ -4,7 +4,6 @@
   </NuxtLayout>
 </template>
 
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;500;700&display=swap');
 

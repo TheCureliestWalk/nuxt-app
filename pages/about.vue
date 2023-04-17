@@ -1,6 +1,8 @@
 <template>
   <Transition>
     <div>
+      {{ $pxczxc }}
+      {{ userProfile }}
       <button @click="userStore.logout" class="block my-2 p-2 bg-emerald-500 text-white hover:bg-emerald-700 rounded">🛑 Logout</button>
       <UploadButton />
       <h1 class="font-bold text-2xl">About</h1>
@@ -17,5 +19,6 @@ import { useUserStore } from '~/stores/user'
 const userStore = useUserStore()
 const user = useSupabaseUser()
 const token = useSupabaseToken()
-const authClient = useSupabaseAuthClient()
+const authClient = 'Just supabase user auth client.'
+const userProfile = getUserProfile()
 </script>
