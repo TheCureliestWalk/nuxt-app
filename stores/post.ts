@@ -1,7 +1,10 @@
 export interface Post {
   title: string
   body: string
-  username: string
+  username?: string
+  tag?: string[]
+  like?: number
+  create_at?: Date
 }
 
 export const usePostStore = defineStore('post', () => {
@@ -16,7 +19,27 @@ export const usePostStore = defineStore('post', () => {
     router.push('/')
   }
 
-  return { createPost }
+  const getAllPost = async (): Promise<Post[]|null> => {
+    const { data, error } = await supabase.from('posts').select('*')
+
+    if (error) {
+      console.log(error)
+    }
+
+    return data
+  }
+
+  const getPostById = async (id: number): Promise<Post[]|null> => {
+    const { data, error } = await supabase.from('posts').select('*').eq('id', id)
+
+    if (error) {
+      console.log(error)
+    }
+
+    return data
+  }
+
+  return { createPost, getAllPost, getPostById }
 })
 
 export type PostStore = ReturnType<typeof usePostStore>

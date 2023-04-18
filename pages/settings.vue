@@ -4,6 +4,11 @@
       <div>
         <h1 class="font-bold text-2xl">Settings</h1>
       </div>
+      <!-- ALert -->
+        <div v-if="alertStore.showAlert" class="my-2 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+          <strong class="font-bold">{{ alertStore.alertTitle }}</strong>
+          <span class="block sm:inline pl-2">{{ alertStore.alertMessage }}</span>
+      </div>
       <div class="flex flex-col gap-2 items-center">
         <label for="email">ID</label>
         <input type="text" name="email" class="p-2 outline-none border" :value="userStore.user?.id" disabled/>
@@ -18,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { emit } from 'process';
+import { useAlertStore } from '~/stores/alert';
 import { useUserStore } from '~/stores/user'
 import { Database } from '~/types/supabase';
 const user = useSupabaseUser()
@@ -26,7 +31,7 @@ const userStore = useUserStore()
 const supabase = useSupabaseClient<Database>()
 const userName = ref<any>('')
 
-const alertMessage = ref('')
+const alertStore = useAlertStore()
 
 const updateHandler = async () => {
   try {
@@ -34,7 +39,7 @@ const updateHandler = async () => {
     if (data) {
       console.log(data)
     }
-    alertMessage.value = 'Profile updated successfully.'
+    alertStore.ihoAlert('Success','Your profile information has been updated')
   } catch (error) {
     console.error(error)
   }
