@@ -1,6 +1,6 @@
 <template>
   <Transition>
-    <div class="p-8 space-y-4 justify-center">
+    <div class="flex p-8 space-y-4 justify-center">
       <div>
         <h1 class="font-bold tracking-wide">Register</h1>
       </div>

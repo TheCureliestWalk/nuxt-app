@@ -1,29 +1,23 @@
 <template>
-  <Transition>
-    <div v-if="show" class="flex items-center justify-between rounded-xl my-4 p-2 px-4 shadow-md w-full bg-amber-500 text-white">
-      <h1 class="text-md font-bold">{{ props.text ?? alertStore.message }}</h1>
-      <button @click="$emit('close', (show = false))" class="rounded-full p-2.5 -m-1.5 hover:bg-white/30">X</button>
-    </div>
-  </Transition>
+  <div class="my-2 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+    <strong class="font-bold">{{ title ?? '' }}</strong>
+    <span class="block sm:inline pl-2">{{ message ?? '' }}</span>
+  </div>
 </template>
 
-<script setup>
-import { useAlertStore } from '~/stores/alert';
+<script setup lang="ts">
+import { useAlertStore } from '~/stores/alert'
 
 const alertStore = useAlertStore()
-const show = ref(true)
+
 const props = defineProps({
-  text: {
+  title: {
     type: String,
-    required: false
+    required: true
+  },
+  message: {
+    type: String,
+    required: true
   }
 })
-
-onMounted(() => {
-  setTimeout(() => {
-    show.value = false
-  }, 3000)
-})
-
-defineEmits(['close'])
 </script>

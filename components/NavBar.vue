@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nav class="w-full bg-white p-3.5 rounded-xl text-gray-700 flex">
-      <div class="pl-4 grow">
+    <nav class="w-full flex justify-between p-3.5 text-gray-700 border-b-2 border-indigo-300 mb-6">
+      <div class="pl-4">
         <a href="/" class="font-bold">
-          <img src="logo.svg" width="100" alt="p-matter" />
+          <img src="/logo.svg" width="100" alt="p-matter" />
         </a>
       </div>
       <div class="pr-4">
@@ -18,6 +18,9 @@
 </template>
 
 <script setup lang="ts">
+import { useUserStore } from '~/stores/user'
+
+const userStore = useUserStore()
 const menus = ref([
   {
     href: '/',

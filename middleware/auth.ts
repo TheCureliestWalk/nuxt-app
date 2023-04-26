@@ -1,4 +1,4 @@
-import { useAlertStore } from "~/stores/alert"
+import { useAlertStore } from '~/stores/alert'
 
 export default defineNuxtRouteMiddleware((to) => {
   const userLogin = useSupabaseUser() // it have ref

@@ -19,7 +19,7 @@ export const usePostStore = defineStore('post', () => {
     router.push('/')
   }
 
-  const getAllPost = async (): Promise<Post[]|null> => {
+  const getAllPost = async (): Promise<Post[] | null> => {
     const { data, error } = await supabase.from('posts').select('*')
 
     if (error) {
@@ -29,7 +29,7 @@ export const usePostStore = defineStore('post', () => {
     return data
   }
 
-  const getPostById = async (id: number): Promise<Post[]|null> => {
+  const getPostById = async (id: number): Promise<Post[] | null> => {
     const { data, error } = await supabase.from('posts').select('*').eq('id', id)
 
     if (error) {

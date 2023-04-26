@@ -7,12 +7,24 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@nuxt/content": "^2.5.2",
+    "@storybook/addon-essentials": "7.0.7",
+    "@storybook/addon-interactions": "7.0.7",
+    "@storybook/addon-links": "7.0.7",
+    "@storybook/blocks": "7.0.7",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@storybook/vue3": "7.0.7",
+    "@storybook/vue3-vite": "7.0.7",
     "nuxt": "^3.3.3",
     "prettier": "2.8.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.0.7",
     "supabase": "^1.50.6"
   },
   "dependencies": {

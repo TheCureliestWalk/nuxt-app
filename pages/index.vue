@@ -1,11 +1,11 @@
 <template>
   <Transition>
     <div>
-      <Alert text="You are not warn to be dead!" />
-      <Search />
-      <Product />
+      <Todo />
     </div>
   </Transition>
 </template>
 
-<script setup></script>
+<script setup>
+const searchQuery = ref('')
+</script>

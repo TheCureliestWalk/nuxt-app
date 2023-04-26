@@ -9,15 +9,15 @@
         <option v-for="x in category" :value="x">{{ x }}</option>
       </select>
     </div>
-    <div class="columns-1 sm:columns-3 lg:columns-4 xl:columns-6 gap-4 space-y-4">
+    <div class="columns-1 sm:columns-3 lg:columns-4 gap-4 space-y-4">
       <div v-for="x in filteredProduct" class="shadow w-full max-w-sm bg-gray-100 rounded text-gray-800">
         <img :src="x.thumbnail" alt="product image" class="w-full h-64 object-cover" />
-        <div class="py-3 px-2 bg-slate-600 text-white flex justify-end mb-3 text-lg font-bold">
+        <div class="py-3 px-2 bg-slate-300 text-slate-700 flex justify-end mb-3 text-lg font-bold">
           <span>{{ x.title }}</span>
         </div>
         <div class="p-4">
           <div class="flex justify-between items-center">
-            <span>${{ x.price }}</span>
+            <span class="font-bold">${{ x.price }}</span>
             <button @click="openModal" class="rounded p-2 text-white bg-amber-500 hover:bg-amber-700 text-sm">Buy Now</button>
           </div>
         </div>
@@ -31,6 +31,12 @@ import { onMounted, ref, watchEffect, computed } from 'vue'
 import type { Product } from '@/types/productType'
 import axios from 'axios'
 
+const props = defineProps({
+  filter: {
+    type: String,
+    required: true
+  }
+})
 const selectedCategory = ref<string>('')
 const filteredProduct = ref<Product[]>([])
 const productItems = ref<Product[]>([])

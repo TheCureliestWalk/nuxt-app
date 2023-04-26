@@ -1,6 +1,7 @@
 <template>
   <Transition>
     <div>
+      <Alert title="Error" :message="alertMessage" />
       <h1 class="font-bold text-2xl">Create New Post</h1>
       <form @submit.prevent="createPost" class="flex flex-col gap-4">
         <label for="title" class="font-bold">Title</label>
@@ -22,6 +23,8 @@ import { useUserStore } from '~/stores/user'
 const supabase = useSupabaseClient()
 const router = useRouter()
 
+const alertMessage = ref('')
+
 const title = ref('')
 const description = ref('')
 const tag = ref('')
@@ -32,31 +35,26 @@ const showTag = computed(() => tag.value.trim().split(','))
 const createPost = async () => {
   try {
     if (!title.value || !description.value) {
+      alertMessage.value('Title and Description are required')
       throw new Error('Title and Description are required')
     }
 
-    const { data, error } = await supabase.from('posts').insert(
-      {
-        title: title.value,
-        body: description.value,
-        username: userStore.user.email,
-        tag: showTag.value
-      }
-      )
-      if (data) {
-        console.log(data)
-      }
-      if (error) {
-        console.log(error)
-      }
-      router.push('/posts')
-      
+    const { data, error } = await supabase.from('posts').insert({
+      title: title.value,
+      body: description.value,
+      username: userStore.user.email,
+      tag: showTag.value
+    })
+    if (data) {
+      console.log(data)
+    }
+    if (error) {
+      alertMessage.value(error)
+      console.error(error)
+    }
+    router.push('/posts')
   } catch (error) {
     console.log(error)
   }
 }
-
-onMounted(() => {
-  userStore.refreshSession()
-})
 </script>
